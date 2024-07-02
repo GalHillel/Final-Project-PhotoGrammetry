@@ -44,7 +44,7 @@ def capture_frames(video_path, output_folder, interval, progress_var, stage_labe
     cap.release()
 
 def run_meshroom(input_folder, output_folder, progress_var, stage_label):
-    meshroom_batch_executable = "/home/gal/Desktop/Meshroom-2023.2.0-av3.1.0-centos7-cuda11.3.1/meshroom_batch"
+    meshroom_batch_executable = "/home/gal/Documents/Final Project/Meshroom/meshroom_batch"
     
     # Start Meshroom processing as a subprocess
     process = subprocess.Popen([meshroom_batch_executable, "--input", input_folder, "--output", output_folder])
