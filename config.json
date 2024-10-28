@@ -1,0 +1,65 @@
+{
+  "missions": [
+    {
+      "id": 6,
+      "youtube_id": "J7p7T-5Gd7w",
+      "flight_log": "DJI_0006.SRT",
+      "drone_model": "DJI Mini 3 Pro",
+      "resolution": "1080p",
+      "frame_rate": 30,
+      "camera_angle": 60,
+      "altitude": 119
+    },
+    {
+      "id": 7,
+      "youtube_id": "ZAWOOhHnfSU",
+      "flight_log": "DJI_0007.SRT",
+      "drone_model": "DJI Mini 3 Pro",
+      "resolution": "1080p",
+      "frame_rate": 30,
+      "camera_angle": 60,
+      "altitude": 119
+    },
+    {
+      "id": 8,
+      "youtube_id": "qbd-1EMVmr0",
+      "flight_log": "DJI_0008.SRT",
+      "drone_model": "DJI Mini 3 Pro",
+      "resolution": "1080p",
+      "frame_rate": 30,
+      "camera_angle": 60,
+      "altitude": 119
+    },
+    {
+      "id": 9,
+      "youtube_id": "Cn0nHiUIRhs",
+      "flight_log": "DJI_0009.SRT",
+      "drone_model": "DJI Mini 3 Pro",
+      "resolution": "1080p",
+      "frame_rate": 30,
+      "camera_angle": 60,
+      "altitude": 119
+    },
+    {
+      "id": 10,
+      "youtube_id": "4djIhBzJtvk",
+      "flight_log": null,
+      "drone_model": "DJI Mini 3 Pro",
+      "resolution": "1080p",
+      "frame_rate": 30,
+      "camera_angle": 60,
+      "altitude": 119
+    },
+    {
+      "id": 11,
+      "youtube_id": "ftd4qKVyo6Q",
+      "flight_log": null,
+      "drone_model": "DJI Mini 3 Pro",
+      "resolution": "1080p",
+      "frame_rate": 30,
+      "camera_angle": 60,
+      "altitude": "low-flying"
+    }
+  ]
+}
+
