@@ -1,0 +1,50 @@
+# Python environment
+myenv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyd
+*.db
+*.sqlite
+*.log
+
+# Output directories
+output/
+python-pcl/
+input-output/
+videos/
+models/
+
+# IDE or editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Miscellaneous
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Pytest cache
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+*.log
+*.pot
+*.mo
+*.pkl
+*.egg-info
+dist/
+build/
