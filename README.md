@@ -1,0 +1,124 @@
+
+# Final Project: Efficient Photogrammetry Processing Pipeline
+
+This project aims to develop a comprehensive photogrammetry processing pipeline using Python. The pipeline automates the process from video frames to high-quality point clouds and merges multiple point clouds into a final consolidated model. This `README.md` provides an overview of the project, tools, installation steps, and usage instructions.
+
+---
+
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Tools and Workflow](#tools-and-workflow)
+  - [Tool 1: video2Images.py](#tool-1-video2imagespy)
+  - [Tool 2: images2PointCloud.py](#tool-2-images2pointcloudpy)
+  - [Tool 3: combinePointCloud.py](#tool-3-combinepointcloudpy)
+- [Results](#results)
+- [Future Enhancements](#future-enhancements)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## Project Overview
+
+This project was developed as part of a photogrammetry course at Ariel University's School of Computer Science. The goal is to process videos into point clouds, merging them to create high-resolution, cohesive 3D models. The tools use open-source libraries and photogrammetry software to maximize efficiency and automate repetitive tasks.
+
+## Features
+
+- **Frame Extraction**: Extracts high-quality frames from video, minimizing blur and maximizing overlap.
+- **Point Cloud Generation**: Converts image frames into point clouds using Meshroom.
+- **Point Cloud Merging**: Merges multiple point clouds using CloudCompare’s Iterative Closest Point (ICP) algorithm.
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/GalHillel/Final-Project-PhotoGrammetry.git
+   cd Final-Project-PhotoGrammetry
+   ```
+2. Install dependencies (Python 3.x and required packages):
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Ensure that [Meshroom](https://alicevision.org/#meshroom) and [CloudCompare](https://www.cloudcompare.org/) are installed and added to your system's PATH.
+
+## Usage
+
+### General Workflow
+
+1. **Extract frames**: Run `video2Images.py` to capture the best frames from video.
+2. **Generate Point Clouds**: Use `images2PointCloud.py` to process frames and generate point clouds.
+3. **Merge Point Clouds**: Run `combinePointCloud.py` to consolidate multiple point clouds into a single model.
+
+---
+
+## Tools and Workflow
+
+### Tool 1: `video2Images.py`
+
+**Description**: Extracts frames from video files with an emphasis on quality and overlap.
+
+**Core Functions**:
+- `calculate_sharpness`: Calculates frame clarity.
+- `estimate_motion`: Measures frame-to-frame motion.
+- `capture_best_frames`: Saves selected frames to a specified directory.
+
+**Usage**:
+```bash
+python video2Images.py --input <path_to_video> --output <output_folder>
+```
+
+### Tool 2: `images2PointCloud.py`
+
+**Description**: Generates point clouds from extracted images using Meshroom.
+
+**Key Features**:
+- Batch processing of images.
+- Error handling and real-time Meshroom output capture.
+
+**Usage**:
+```bash
+python images2PointCloud.py --input <images_folder> --output <output_folder>
+```
+
+### Tool 3: `combinePointCloud.py`
+
+**Description**: Merges multiple point clouds using CloudCompare's CLI and saves the final result.
+
+**Usage**:
+```bash
+python combinePointCloud.py --input <path_to_point_cloud1> <path_to_point_cloud2> --output <output_folder>
+```
+
+---
+
+## Results
+
+The output point clouds for each stage are stored in the project directory. Here are some of the generated point clouds:
+
+1. **`video1.ply`** - Initial point cloud from Video 1.
+2. **`v1+v2+v3+v4+video1+video2.bin`** - Final merged point cloud showcasing the consolidated 3D model.
+
+These visualizations can be viewed using software such as CloudCompare or MeshLab for analysis.
+
+---
+
+## Future Enhancements
+
+- **Automated Quality Assessment**: Integrate machine learning models for automatic frame quality assessment.
+- **Optimized Meshroom Settings**: Adjust settings for faster processing and improved point cloud quality.
+- **Expanded Format Support**: Add support for additional file formats and merging algorithms.
+
+## Contributing
+
+Contributions are welcome! Please fork this repository, make your changes, and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+For more details, see our [documentation](https://github.com/GalHillel/Final-Project-PhotoGrammetry).
