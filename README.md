@@ -1,5 +1,5 @@
 
-# Final Project: Efficient Photogrammetry Processing Pipeline
+# Final Project Photogrammetry
 
 This project aims to develop a comprehensive photogrammetry processing pipeline using Python. The pipeline automates the process from video frames to high-quality point clouds and merges multiple point clouds into a final consolidated model. This `README.md` provides an overview of the project, tools, installation steps, and usage instructions.
 
@@ -15,9 +15,6 @@ This project aims to develop a comprehensive photogrammetry processing pipeline 
   - [Tool 2: images2PointCloud.py](#tool-2-images2pointcloudpy)
   - [Tool 3: combinePointCloud.py](#tool-3-combinepointcloudpy)
 - [Results](#results)
-- [Future Enhancements](#future-enhancements)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -104,21 +101,3 @@ The output point clouds for each stage are stored in the project directory. Here
 These visualizations can be viewed using software such as CloudCompare or MeshLab for analysis.
 
 ---
-
-## Future Enhancements
-
-- **Automated Quality Assessment**: Integrate machine learning models for automatic frame quality assessment.
-- **Optimized Meshroom Settings**: Adjust settings for faster processing and improved point cloud quality.
-- **Expanded Format Support**: Add support for additional file formats and merging algorithms.
-
-## Contributing
-
-Contributions are welcome! Please fork this repository, make your changes, and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-For more details, see our [documentation](https://github.com/GalHillel/Final-Project-PhotoGrammetry).
