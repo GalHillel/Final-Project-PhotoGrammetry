@@ -20,7 +20,7 @@ This project aims to develop a comprehensive photogrammetry processing pipeline 
 
 ## Project Overview
 
-This project was developed as part of a photogrammetry course at Ariel University's School of Computer Science. The goal is to process videos into point clouds, merging them to create high-resolution, cohesive 3D models. The tools use open-source libraries and photogrammetry software to maximize efficiency and automate repetitive tasks.
+This project was developed as Final Project at Ariel University's School of Computer Science. The goal is to process videos into point clouds, merging them to create high-resolution, cohesive 3D models. The tools use open-source libraries and photogrammetry software to maximize efficiency and automate repetitive tasks.
 
 ## Features
 
