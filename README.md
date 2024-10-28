@@ -14,7 +14,6 @@ This project aims to develop a comprehensive photogrammetry processing pipeline 
   - [Tool 1: video2Images.py](#tool-1-video2imagespy)
   - [Tool 2: images2PointCloud.py](#tool-2-images2pointcloudpy)
   - [Tool 3: combinePointCloud.py](#tool-3-combinepointcloudpy)
-- [Results](#results)
 
 ---
 
@@ -88,16 +87,5 @@ python images2PointCloud.py --input <images_folder> --output <output_folder>
 ```bash
 python combinePointCloud.py --input <path_to_point_cloud1> <path_to_point_cloud2> --output <output_folder>
 ```
-
----
-
-## Results
-
-The output point clouds for each stage are stored in the project directory. Here are some of the generated point clouds:
-
-1. **`video1.ply`** - Initial point cloud from Video 1.
-2. **`v1+v2+v3+v4+video1+video2.bin`** - Final merged point cloud showcasing the consolidated 3D model.
-
-These visualizations can be viewed using software such as CloudCompare or MeshLab for analysis.
 
 ---
